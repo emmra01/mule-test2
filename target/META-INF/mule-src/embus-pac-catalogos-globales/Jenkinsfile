@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Escaneo SonarQube') {
       steps {
-        sh 'mvn clean verify sonar:sonar -D"sonar.projectKey=pruebas-mulesoft" -D"sonar.host.url=http://172.17.0.2:9000" -D"sonar.login=sqp_5dc5fc10600aa17c9e2b83dff76b1ca245dda2fb"'
+        sh 'mvn clean verify sonar:sonar -D"sonar.projectKey=pruebas2-mulesoft" -D"sonar.host.url=http://172.17.0.2:9000" -D"sonar.login=sqp_1a1f3654184ae9a0cd3824c77cf6090f8c723e84"'
       }
     }
     stage('Deploy CloudHub') {
